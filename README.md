@@ -11,7 +11,9 @@ https://imgaug.readthedocs.io/en/latest/
 
 ### Augmentation Methods
 1. Affine Translation, Flip upside down, Mirror flip, Gaussian Blur, Rotate
+
         augmentation = iaa.Sequential([
+        
             iaa.Rotate((-30, 30))  
             iaa.Fliplr(0.5),
             iaa.Flipud(0.5),
